@@ -1,0 +1,906 @@
+2023-02-18 02:37:07.261+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2023-02-18 02:37:14.877+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2023-02-18 02:37:15.188+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 11.0.16.1+1-LTS-1
+2023-02-18 02:37:16.671+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2023-02-18 02:37:16.817+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: Session workerName=node0
+2023-02-18 02:37:18.236+0000 [id=1]	INFO	hudson.WebAppMain#contextInitialized: Jenkins home directory: C:\ProgramData\Jenkins\.jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2023-02-18 02:37:18.538+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@1a2909ae{Jenkins v2.391,/,file:///C:/ProgramData/Jenkins/war/,AVAILABLE}{C:\ProgramData\Jenkins\war}
+2023-02-18 02:37:19.316+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2023-02-18 02:37:19.332+0000 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2023-02-18 02:37:19.588+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStop: Stopped Server@39ad977d{STOPPING}[10.0.13,sto=0]
+2023-02-18 02:37:19.593+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStop: Stopped ServerConnector@48a12036{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2023-02-18 02:37:19.598+0000 [id=1]	INFO	hudson.lifecycle.Lifecycle#onStatusUpdate: Stopping Jenkins
+2023-02-18 02:37:20.848+0000 [id=39]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2023-02-18 02:37:20.883+0000 [id=36]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2023-02-18 02:37:20.884+0000 [id=1]	INFO	jenkins.model.Jenkins$16#onAttained: Started termination
+2023-02-18 02:37:20.898+0000 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2023-02-18 02:37:20.958+0000 [id=1]	INFO	jenkins.model.Jenkins$16#onAttained: Completed termination
+2023-02-18 02:37:20.966+0000 [id=1]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+2023-02-18 02:37:21.062+0000 [id=1]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+2023-02-18 02:37:21.062+0000 [id=1]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+2023-02-18 02:37:21.578+0000 [id=1]	INFO	hudson.lifecycle.Lifecycle#onStatusUpdate: Jenkins stopped
+2023-02-18 02:37:21.578+0000 [id=1]	INFO	hudson.WebAppMain#contextDestroyed: Shutting down a Jenkins instance that was still starting up
+java.lang.Throwable: reason
+	at hudson.WebAppMain.contextDestroyed(WebAppMain.java:383)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextDestroyed(ContextHandler.java:1058)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextDestroyed(ServletContextHandler.java:636)
+	at org.eclipse.jetty.server.handler.ContextHandler.contextDestroyed(ContextHandler.java:1015)
+	at org.eclipse.jetty.servlet.ServletHandler.doStop(ServletHandler.java:306)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:182)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:205)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:97)
+	at org.eclipse.jetty.security.SecurityHandler.doStop(SecurityHandler.java:411)
+	at org.eclipse.jetty.security.ConstraintSecurityHandler.doStop(ConstraintSecurityHandler.java:413)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:182)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:205)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:97)
+	at org.eclipse.jetty.server.session.SessionHandler.doStop(SessionHandler.java:497)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:182)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:205)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:97)
+	at org.eclipse.jetty.server.handler.ContextHandler.stopContext(ContextHandler.java:1038)
+	at org.eclipse.jetty.servlet.ServletContextHandler.stopContext(ServletContextHandler.java:399)
+	at org.eclipse.jetty.webapp.WebAppContext.stopContext(WebAppContext.java:1311)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStop(ServletContextHandler.java:312)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:182)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:205)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:97)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:517)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:132)
+	at winstone.Launcher.shutdown(Launcher.java:438)
+	at winstone.Launcher.<init>(Launcher.java:220)
+	at winstone.Launcher.main(Launcher.java:492)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at executable.Main.main(Main.java:347)
+2023-02-18 02:37:21.588+0000 [id=24]	SEVERE	hudson.util.BootFailure#publish: Failed to initialize Jenkins
+java.lang.InterruptedException
+	at java.base/java.lang.Object.wait(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:328)
+	at org.jvnet.hudson.reactor.Reactor.execute(Reactor.java:288)
+	at jenkins.InitReactorRunner.run(InitReactorRunner.java:49)
+	at jenkins.model.Jenkins.executeReactor(Jenkins.java:1199)
+	at jenkins.model.Jenkins.<init>(Jenkins.java:987)
+	at hudson.model.Hudson.<init>(Hudson.java:86)
+	at hudson.model.Hudson.<init>(Hudson.java:82)
+	at hudson.WebAppMain$3.run(WebAppMain.java:247)
+Caused: hudson.util.HudsonFailedToLoad
+	at hudson.WebAppMain$3.run(WebAppMain.java:264)
+2023-02-18 02:37:21.636+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStop: Stopped w.@1a2909ae{Jenkins v2.391,/,null,STOPPED}{C:\ProgramData\Jenkins\war}
+2023-02-18 02:37:21.636+0000 [id=37]	WARNING	jenkins.model.Jenkins$5#runTask: Loading global config failed perhaps due to plugin dependency issues
+java.lang.ClassNotFoundException: hudson.model.labels.LabelAtom$LabelAtomConverter
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:476)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:511)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+Caused: java.lang.NoClassDefFoundError: hudson/model/labels/LabelAtom$LabelAtomConverter
+	at hudson.model.labels.LabelAtom.<clinit>(LabelAtom.java:302)
+	at jenkins.model.Jenkins.getLabelAtom(Jenkins.java:2104)
+	at jenkins.model.Jenkins.getSelfLabel(Jenkins.java:3286)
+	at hudson.model.Node.getAssignedLabels(Node.java:315)
+	at jenkins.model.Jenkins.trimLabels(Jenkins.java:2284)
+	at jenkins.model.Jenkins.trimLabels(Jenkins.java:2265)
+	at jenkins.model.Nodes$6.run(Nodes.java:352)
+	at hudson.model.Queue._withLock(Queue.java:1395)
+	at hudson.model.Queue.withLock(Queue.java:1269)
+	at jenkins.model.Nodes.load(Nodes.java:346)
+	at jenkins.model.Jenkins$12.run(Jenkins.java:3429)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-02-18 02:37:21.638+0000 [id=53]	WARNING	j.util.AtmostOneTaskExecutor$1#call
+java.lang.ClassNotFoundException: hudson.model.Queue$JobOffer
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:476)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:511)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+Caused: java.lang.NoClassDefFoundError: hudson/model/Queue$JobOffer
+	at hudson.model.Queue.maintain(Queue.java:1503)
+	at hudson.model.Queue$1.call(Queue.java:330)
+	at hudson.model.Queue$1.call(Queue.java:327)
+	at jenkins.util.AtmostOneTaskExecutor$1.call(AtmostOneTaskExecutor.java:109)
+	at jenkins.util.AtmostOneTaskExecutor$1.call(AtmostOneTaskExecutor.java:99)
+	at jenkins.security.ImpersonatingExecutorService$2.call(ImpersonatingExecutorService.java:80)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:121)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-02-18 02:37:21.644+0000 [id=1]	INFO	winstone.Logger#logInternal: Jetty shutdown successfully
+java.io.IOException: Failed to start Jetty
+	at winstone.Launcher.<init>(Launcher.java:209)
+	at winstone.Launcher.main(Launcher.java:492)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at executable.Main.main(Main.java:347)
+Caused by: java.io.IOException: Unable to establish loopback connection
+	at java.base/sun.nio.ch.PipeImpl$Initializer.run(PipeImpl.java:94)
+	at java.base/sun.nio.ch.PipeImpl$Initializer.run(PipeImpl.java:61)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.nio.ch.PipeImpl.<init>(PipeImpl.java:171)
+	at java.base/sun.nio.ch.SelectorProviderImpl.openPipe(SelectorProviderImpl.java:50)
+	at java.base/java.nio.channels.Pipe.open(Pipe.java:155)
+	at java.base/sun.nio.ch.WindowsSelectorImpl.<init>(WindowsSelectorImpl.java:142)
+	at java.base/sun.nio.ch.WindowsSelectorProvider.openSelector(WindowsSelectorProvider.java:44)
+	at java.base/java.nio.channels.Selector.open(Selector.java:295)
+	at org.eclipse.jetty.io.SelectorManager.newSelector(SelectorManager.java:255)
+	at org.eclipse.jetty.io.ManagedSelector.doStart(ManagedSelector.java:112)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:171)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:121)
+	at org.eclipse.jetty.io.SelectorManager.doStart(SelectorManager.java:239)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:171)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:367)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:75)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:228)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:428)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at winstone.Launcher.<init>(Launcher.java:205)
+	... 6 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:483)
+	at java.base/sun.nio.ch.Net.connect(Net.java:472)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:694)
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:194)
+	at java.base/sun.nio.ch.PipeImpl$Initializer$LoopbackConnector.run(PipeImpl.java:127)
+	at java.base/sun.nio.ch.PipeImpl$Initializer.run(PipeImpl.java:76)
+	... 30 more
+2023-02-18 02:37:21.644+0000 [id=24]	SEVERE	h.i.i.InstallUncaughtExceptionHandler$DefaultUncaughtExceptionHandler#uncaughtException: A thread (Jenkins initialization thread/24) died unexpectedly due to an uncaught exception. This may leave your server corrupted and usually indicates a software bug.
+java.lang.ClassNotFoundException: org.codehaus.groovy.runtime.InvokerInvocationException
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:476)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:511)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+Caused: java.lang.NoClassDefFoundError: org/codehaus/groovy/runtime/InvokerInvocationException
+	at groovy.lang.GroovyObjectSupport.getDefaultMetaClass(GroovyObjectSupport.java:61)
+	at groovy.lang.GroovyObjectSupport.<init>(GroovyObjectSupport.java:34)
+	at groovy.lang.Binding.<init>(Binding.java:35)
+	at jenkins.util.groovy.GroovyHookScript.<init>(GroovyHookScript.java:45)
+	at hudson.util.BootFailure.publish(BootFailure.java:48)
+	at hudson.WebAppMain$3.run(WebAppMain.java:264)
+2023-02-18 02:37:21.652+0000 [id=1]	SEVERE	winstone.Logger#logInternal: Container startup failed
+java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:483)
+	at java.base/sun.nio.ch.Net.connect(Net.java:472)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:694)
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:194)
+	at java.base/sun.nio.ch.PipeImpl$Initializer$LoopbackConnector.run(PipeImpl.java:127)
+	at java.base/sun.nio.ch.PipeImpl$Initializer.run(PipeImpl.java:76)
+Caused: java.io.IOException: Unable to establish loopback connection
+	at java.base/sun.nio.ch.PipeImpl$Initializer.run(PipeImpl.java:94)
+	at java.base/sun.nio.ch.PipeImpl$Initializer.run(PipeImpl.java:61)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.nio.ch.PipeImpl.<init>(PipeImpl.java:171)
+	at java.base/sun.nio.ch.SelectorProviderImpl.openPipe(SelectorProviderImpl.java:50)
+	at java.base/java.nio.channels.Pipe.open(Pipe.java:155)
+	at java.base/sun.nio.ch.WindowsSelectorImpl.<init>(WindowsSelectorImpl.java:142)
+	at java.base/sun.nio.ch.WindowsSelectorProvider.openSelector(WindowsSelectorProvider.java:44)
+	at java.base/java.nio.channels.Selector.open(Selector.java:295)
+	at org.eclipse.jetty.io.SelectorManager.newSelector(SelectorManager.java:255)
+	at org.eclipse.jetty.io.ManagedSelector.doStart(ManagedSelector.java:112)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:171)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:121)
+	at org.eclipse.jetty.io.SelectorManager.doStart(SelectorManager.java:239)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:171)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:367)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:75)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:228)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:428)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at winstone.Launcher.<init>(Launcher.java:205)
+Caused: java.io.IOException: Failed to start Jetty
+	at winstone.Launcher.<init>(Launcher.java:209)
+	at winstone.Launcher.main(Launcher.java:492)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at executable.Main.main(Main.java:347)
+2023-02-18 02:49:34.641+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2023-02-18 02:49:35.456+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2023-02-18 02:49:36.458+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 11.0.16.1+1-LTS-1
+2023-02-18 02:49:42.519+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2023-02-18 02:49:42.810+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: Session workerName=node0
+2023-02-18 02:49:46.501+0000 [id=1]	INFO	hudson.WebAppMain#contextInitialized: Jenkins home directory: C:\ProgramData\Jenkins\.jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2023-02-18 02:49:47.503+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@5cbb84b1{Jenkins v2.391,/,file:///C:/ProgramData/Jenkins/war/,AVAILABLE}{C:\ProgramData\Jenkins\war}
+2023-02-18 02:49:47.585+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@49e5f737{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2023-02-18 02:49:47.691+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started Server@87a85e1{STARTING}[10.0.13,sto=0] @26494ms
+2023-02-18 02:49:47.719+0000 [id=25]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine running: controlPort=disabled
+2023-02-18 02:49:48.949+0000 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2023-02-18 02:49:49.017+0000 [id=41]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2023-02-18 02:49:53.445+0000 [id=30]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2023-02-18 02:49:53.459+0000 [id=39]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2023-02-18 02:49:53.483+0000 [id=42]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2023-02-18 02:49:54.060+0000 [id=31]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2023-02-18 02:49:54.061+0000 [id=45]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2023-02-18 02:49:54.063+0000 [id=30]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2023-02-18 02:49:54.066+0000 [id=40]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2023-02-18 02:49:54.137+0000 [id=58]	INFO	hudson.util.Retrier#start: Attempt #1 to do the action check updates server
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/C:/ProgramData/Jenkins/war/WEB-INF/lib/groovy-all-2.4.21.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2023-02-18 02:49:54.440+0000 [id=58]	INFO	hudson.util.Retrier#start: The attempt #1 to do the action check updates server failed with an allowed exception:
+java.net.UnknownHostException: updates.jenkins.io
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:229)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:302)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:508)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:372)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:207)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1592)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at hudson.model.DownloadService.loadJSON(DownloadService.java:122)
+	at hudson.model.UpdateSite.updateDirectlyNow(UpdateSite.java:218)
+	at hudson.model.UpdateSite.updateDirectlyNow(UpdateSite.java:213)
+	at hudson.PluginManager.checkUpdatesServer(PluginManager.java:2088)
+	at hudson.util.Retrier.start(Retrier.java:62)
+	at hudson.PluginManager.doCheckUpdatesServer(PluginManager.java:2059)
+	at jenkins.DailyCheck.execute(DailyCheck.java:93)
+	at hudson.model.AsyncPeriodicWork.lambda$doRun$0(AsyncPeriodicWork.java:102)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-02-18 02:49:54.442+0000 [id=58]	INFO	hudson.util.Retrier#start: Calling the listener of the allowed exception 'updates.jenkins.io' at the attempt #1 to do the action check updates server
+2023-02-18 02:49:54.447+0000 [id=58]	INFO	hudson.util.Retrier#start: Attempted the action check updates server for 1 time(s) with no success
+2023-02-18 02:49:54.452+0000 [id=58]	SEVERE	hudson.PluginManager#doCheckUpdatesServer: Error checking update sites for 1 attempt(s). Last exception was: UnknownHostException: updates.jenkins.io
+2023-02-18 02:49:55.339+0000 [id=40]	INFO	jenkins.install.SetupWizard#init: 
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+Jenkins initial setup is required. An admin user has been created and a password generated.
+Please use the following password to proceed to installation:
+
+d7639df077194294b09db19bffece042
+
+This may also be found at: C:\ProgramData\Jenkins\.jenkins\secrets\initialAdminPassword
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+2023-02-18 02:49:55.343+0000 [id=40]	WARNING	hudson.model.UpdateCenter#updateDefaultSite: Upgrading Jenkins. Failed to update the default Update Site 'default'. Plugin upgrades may fail.
+java.net.UnknownHostException: updates.jenkins.io
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:229)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:302)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:508)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:372)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:207)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1592)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at hudson.model.DownloadService.loadJSON(DownloadService.java:122)
+	at hudson.model.UpdateSite.updateDirectlyNow(UpdateSite.java:218)
+	at hudson.model.UpdateSite.updateDirectlyNow(UpdateSite.java:213)
+	at hudson.model.UpdateCenter.updateDefaultSite(UpdateCenter.java:2650)
+	at jenkins.install.SetupWizard.init(SetupWizard.java:209)
+	at jenkins.install.InstallState$InitialSecuritySetup.initializeState(InstallState.java:182)
+	at jenkins.model.Jenkins.setInstallState(Jenkins.java:1137)
+	at jenkins.install.InstallUtil.proceedToNextStateFrom(InstallUtil.java:99)
+	at jenkins.install.InstallState$Unknown.initializeState(InstallState.java:88)
+	at jenkins.model.Jenkins$15.run(Jenkins.java:3519)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-02-18 02:49:55.346+0000 [id=40]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2023-02-18 02:49:55.429+0000 [id=24]	INFO	hudson.lifecycle.Lifecycle#onReady: Jenkins is fully up and running
+2023-02-18 03:06:49.189+0000 [id=13]	INFO	hudson.PluginManager#install: Starting installation of a batch of 19 plugins plus their dependencies
+2023-02-18 03:07:03.318+0000 [id=74]	INFO	hudson.PluginManager#install: Starting installation of a batch of 19 plugins plus their dependencies
+2023-02-18 03:08:16.784+0000 [id=13]	INFO	hudson.PluginManager#install: Starting installation of a batch of 19 plugins plus their dependencies
+2023-02-18 03:12:57.006+0000 [id=84]	INFO	hudson.PluginManager#install: Starting installation of a batch of 19 plugins plus their dependencies
+2023-02-18 03:13:25.029+0000 [id=77]	INFO	hudson.PluginManager#install: Starting installation of a batch of 19 plugins plus their dependencies
+2023-02-18 03:15:11.673+0000 [id=76]	INFO	hudson.PluginManager#install: Starting installation of a batch of 19 plugins plus their dependencies
+2023-02-19 16:07:31.620+0000 [id=46]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.652+0000 [id=46]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.652+0000 [id=46]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.652+0000 [id=46]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.652+0000 [id=49]	INFO	hudson.model.AsyncPeriodicWork#doRun: Fingerprint cleanup thread is still running. Execution aborted.
+2023-02-19 16:07:31.652+0000 [id=115]	INFO	hudson.util.Retrier#start: Attempt #1 to do the action check updates server
+2023-02-19 16:07:31.667+0000 [id=46]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=46]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=46]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=46]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=46]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=46]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=115]	INFO	hudson.util.Retrier#start: The attempt #1 to do the action check updates server failed with an allowed exception:
+java.net.UnknownHostException: updates.jenkins.io
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:229)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:302)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:508)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:372)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:207)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1592)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at hudson.model.DownloadService.loadJSON(DownloadService.java:122)
+	at hudson.model.UpdateSite.updateDirectlyNow(UpdateSite.java:218)
+	at hudson.model.UpdateSite.updateDirectlyNow(UpdateSite.java:213)
+	at hudson.PluginManager.checkUpdatesServer(PluginManager.java:2088)
+	at hudson.util.Retrier.start(Retrier.java:62)
+	at hudson.PluginManager.doCheckUpdatesServer(PluginManager.java:2059)
+	at jenkins.DailyCheck.execute(DailyCheck.java:93)
+	at hudson.model.AsyncPeriodicWork.lambda$doRun$0(AsyncPeriodicWork.java:102)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-02-19 16:07:31.667+0000 [id=46]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=115]	INFO	hudson.util.Retrier#start: Calling the listener of the allowed exception 'updates.jenkins.io' at the attempt #1 to do the action check updates server
+2023-02-19 16:07:31.667+0000 [id=115]	INFO	hudson.util.Retrier#start: Attempted the action check updates server for 1 time(s) with no success
+2023-02-19 16:07:31.667+0000 [id=115]	SEVERE	hudson.PluginManager#doCheckUpdatesServer: Error checking update sites for 1 attempt(s). Last exception was: UnknownHostException: updates.jenkins.io
+2023-02-19 16:07:31.667+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.667+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:07:31.683+0000 [id=56]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-19 16:36:32.447+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2023-02-19 16:36:32.568+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2023-02-19 16:36:32.724+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 11.0.16.1+1-LTS-1
+2023-02-19 16:36:33.792+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2023-02-19 16:36:33.944+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: Session workerName=node0
+2023-02-19 16:36:34.768+0000 [id=1]	INFO	hudson.WebAppMain#contextInitialized: Jenkins home directory: C:\ProgramData\Jenkins\.jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2023-02-19 16:36:34.976+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@5cbb84b1{Jenkins v2.391,/,file:///C:/ProgramData/Jenkins/war/,AVAILABLE}{C:\ProgramData\Jenkins\war}
+2023-02-19 16:36:35.016+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@49e5f737{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2023-02-19 16:36:35.048+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started Server@87a85e1{STARTING}[10.0.13,sto=0] @4693ms
+2023-02-19 16:36:35.056+0000 [id=25]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine running: controlPort=disabled
+2023-02-19 16:36:35.496+0000 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2023-02-19 16:36:35.544+0000 [id=45]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2023-02-19 16:36:36.943+0000 [id=45]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2023-02-19 16:36:36.959+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2023-02-19 16:36:36.967+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2023-02-19 16:36:37.399+0000 [id=39]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2023-02-19 16:36:37.399+0000 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2023-02-19 16:36:37.399+0000 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2023-02-19 16:36:37.399+0000 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2023-02-19 16:36:37.455+0000 [id=58]	INFO	hudson.util.Retrier#start: Attempt #1 to do the action check updates server
+2023-02-19 16:36:37.503+0000 [id=34]	INFO	jenkins.install.SetupWizard#init: 
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+Jenkins initial setup is required. An admin user has been created and a password generated.
+Please use the following password to proceed to installation:
+
+d7639df077194294b09db19bffece042
+
+This may also be found at: C:\ProgramData\Jenkins\.jenkins\secrets\initialAdminPassword
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/C:/ProgramData/Jenkins/war/WEB-INF/lib/groovy-all-2.4.21.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2023-02-19 16:36:37.671+0000 [id=34]	WARNING	hudson.model.UpdateCenter#updateDefaultSite: Upgrading Jenkins. Failed to update the default Update Site 'default'. Plugin upgrades may fail.
+java.net.UnknownHostException: updates.jenkins.io
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:229)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:302)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:508)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:372)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:207)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1592)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at hudson.model.DownloadService.loadJSON(DownloadService.java:122)
+	at hudson.model.UpdateSite.updateDirectlyNow(UpdateSite.java:218)
+	at hudson.model.UpdateSite.updateDirectlyNow(UpdateSite.java:213)
+	at hudson.model.UpdateCenter.updateDefaultSite(UpdateCenter.java:2650)
+	at jenkins.install.SetupWizard.init(SetupWizard.java:209)
+	at jenkins.install.InstallState$InitialSecuritySetup.initializeState(InstallState.java:182)
+	at jenkins.model.Jenkins.setInstallState(Jenkins.java:1137)
+	at jenkins.install.InstallUtil.proceedToNextStateFrom(InstallUtil.java:99)
+	at jenkins.install.InstallState$Unknown.initializeState(InstallState.java:88)
+	at jenkins.model.Jenkins$15.run(Jenkins.java:3519)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:177)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:305)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1164)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:221)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:120)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-02-19 16:36:37.671+0000 [id=58]	INFO	hudson.util.Retrier#start: The attempt #1 to do the action check updates server failed with an allowed exception:
+java.net.UnknownHostException: updates.jenkins.io
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:229)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:302)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:508)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:372)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:207)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1592)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250)
+	at hudson.model.DownloadService.loadJSON(DownloadService.java:122)
+	at hudson.model.UpdateSite.updateDirectlyNow(UpdateSite.java:218)
+	at hudson.model.UpdateSite.updateDirectlyNow(UpdateSite.java:213)
+	at hudson.PluginManager.checkUpdatesServer(PluginManager.java:2088)
+	at hudson.util.Retrier.start(Retrier.java:62)
+	at hudson.PluginManager.doCheckUpdatesServer(PluginManager.java:2059)
+	at jenkins.DailyCheck.execute(DailyCheck.java:93)
+	at hudson.model.AsyncPeriodicWork.lambda$doRun$0(AsyncPeriodicWork.java:102)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-02-19 16:36:37.671+0000 [id=58]	INFO	hudson.util.Retrier#start: Calling the listener of the allowed exception 'updates.jenkins.io' at the attempt #1 to do the action check updates server
+2023-02-19 16:36:37.679+0000 [id=58]	INFO	hudson.util.Retrier#start: Attempted the action check updates server for 1 time(s) with no success
+2023-02-19 16:36:37.679+0000 [id=58]	SEVERE	hudson.PluginManager#doCheckUpdatesServer: Error checking update sites for 1 attempt(s). Last exception was: UnknownHostException: updates.jenkins.io
+2023-02-19 16:36:37.887+0000 [id=39]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2023-02-19 16:36:37.927+0000 [id=24]	INFO	hudson.lifecycle.Lifecycle#onReady: Jenkins is fully up and running
+2023-02-19 16:40:23.664+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2023-02-19 16:40:23.844+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2023-02-19 16:40:24.259+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 11.0.16.1+1-LTS-1
+2023-02-19 16:40:26.874+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2023-02-19 16:40:27.256+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: Session workerName=node0
+2023-02-19 16:40:30.055+0000 [id=1]	INFO	hudson.WebAppMain#contextInitialized: Jenkins home directory: C:\ProgramData\Jenkins\.jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2023-02-19 16:40:30.600+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@5cbb84b1{Jenkins v2.391,/,file:///C:/ProgramData/Jenkins/war/,AVAILABLE}{C:\ProgramData\Jenkins\war}
+2023-02-19 16:40:30.660+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@49e5f737{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2023-02-19 16:40:30.708+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started Server@87a85e1{STARTING}[10.0.13,sto=0] @15092ms
+2023-02-19 16:40:30.728+0000 [id=25]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine running: controlPort=disabled
+2023-02-19 16:40:31.474+0000 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2023-02-19 16:40:31.479+0000 [id=31]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2023-02-19 16:40:32.859+0000 [id=45]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2023-02-19 16:40:32.868+0000 [id=31]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2023-02-19 16:40:32.878+0000 [id=41]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2023-02-19 16:40:33.454+0000 [id=43]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2023-02-19 16:40:33.455+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2023-02-19 16:40:33.456+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2023-02-19 16:40:33.459+0000 [id=31]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2023-02-19 16:40:33.528+0000 [id=58]	INFO	hudson.util.Retrier#start: Attempt #1 to do the action check updates server
+2023-02-19 16:40:33.605+0000 [id=35]	INFO	jenkins.install.SetupWizard#init: 
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+Jenkins initial setup is required. An admin user has been created and a password generated.
+Please use the following password to proceed to installation:
+
+d7639df077194294b09db19bffece042
+
+This may also be found at: C:\ProgramData\Jenkins\.jenkins\secrets\initialAdminPassword
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/C:/ProgramData/Jenkins/war/WEB-INF/lib/groovy-all-2.4.21.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2023-02-19 16:41:30.036+0000 [id=58]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+2023-02-19 16:41:30.037+0000 [id=58]	INFO	hudson.util.Retrier#start: Performed the action check updates server successfully at the attempt #1
+2023-02-19 16:41:34.962+0000 [id=35]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2023-02-19 16:41:35.071+0000 [id=24]	INFO	hudson.lifecycle.Lifecycle#onReady: Jenkins is fully up and running
+2023-02-19 16:44:28.253+0000 [id=79]	INFO	hudson.PluginManager#install: Starting installation of a batch of 19 plugins plus their dependencies
+2023-02-19 16:44:28.253+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of ionicons-api for plugin cloudbees-folder
+2023-02-19 16:44:28.253+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of instance-identity for plugin ionicons-api
+2023-02-19 16:44:28.253+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of bouncycastle-api for plugin instance-identity
+2023-02-19 16:44:28.253+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of javax-mail-api for plugin bouncycastle-api
+2023-02-19 16:44:28.253+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of javax-activation-api for plugin javax-mail-api
+2023-02-19 16:44:28.253+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of javax-activation-api on behalf of admin
+2023-02-19 16:44:28.253+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of sshd for plugin antisamy-markup-formatter
+2023-02-19 16:44:28.267+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading javax-activation-api
+2023-02-19 16:44:28.267+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of mina-sshd-api-core for plugin sshd
+2023-02-19 16:44:28.267+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of mina-sshd-api-common for plugin mina-sshd-api-core
+2023-02-19 16:44:28.277+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of token-macro for plugin build-timeout
+2023-02-19 16:44:28.277+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of structs for plugin token-macro
+2023-02-19 16:44:28.277+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of credentials for plugin credentials-binding
+2023-02-19 16:44:28.286+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of ssh-credentials for plugin credentials-binding
+2023-02-19 16:44:28.286+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of trilead-api for plugin ssh-credentials
+2023-02-19 16:44:28.286+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-step-api for plugin credentials-binding
+2023-02-19 16:44:28.286+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of plain-credentials for plugin credentials-binding
+2023-02-19 16:44:28.286+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-api for plugin timestamper
+2023-02-19 16:44:28.286+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of scm-api for plugin workflow-api
+2023-02-19 16:44:28.294+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of commons-lang3-api for plugin timestamper
+2023-02-19 16:44:28.294+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of matrix-project for plugin ws-cleanup
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of script-security for plugin matrix-project
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of caffeine-api for plugin script-security
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of junit for plugin matrix-project
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of jackson2-api for plugin junit
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of jaxb for plugin jackson2-api
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of snakeyaml-api for plugin jackson2-api
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of bootstrap5-api for plugin junit
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of font-awesome-api for plugin bootstrap5-api
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of commons-text-api for plugin font-awesome-api
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of plugin-util-api for plugin font-awesome-api
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of popper2-api for plugin bootstrap5-api
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of echarts-api for plugin junit
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of jquery3-api for plugin echarts-api
+2023-02-19 16:44:28.296+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of display-url-api for plugin junit
+2023-02-19 16:44:28.307+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of checks-api for plugin junit
+2023-02-19 16:44:28.307+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-support for plugin checks-api
+2023-02-19 16:44:28.307+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of resource-disposer for plugin ws-cleanup
+2023-02-19 16:44:28.307+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-cps for plugin gradle
+2023-02-19 16:44:28.307+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-scm-step for plugin workflow-cps
+2023-02-19 16:44:28.637+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-durable-task-step for plugin gradle
+2023-02-19 16:44:28.637+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of durable-task for plugin workflow-durable-task-step
+2023-02-19 16:44:28.637+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-job for plugin gradle
+2023-02-19 16:44:28.637+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-basic-steps for plugin gradle
+2023-02-19 16:44:28.637+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of jakarta-mail-api for plugin workflow-basic-steps
+2023-02-19 16:44:28.637+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of jakarta-activation-api for plugin jakarta-mail-api
+2023-02-19 16:44:28.637+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of apache-httpcomponents-client-4-api for plugin workflow-basic-steps
+2023-02-19 16:44:28.637+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of mailer for plugin workflow-basic-steps
+2023-02-19 16:44:28.637+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-milestone-step for plugin workflow-aggregator
+2023-02-19 16:44:28.637+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-build-step for plugin workflow-aggregator
+2023-02-19 16:44:28.637+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-groovy-lib for plugin workflow-aggregator
+2023-02-19 16:44:28.637+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of variant for plugin pipeline-groovy-lib
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-model-definition for plugin workflow-aggregator
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-model-extensions for plugin pipeline-model-definition
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-model-api for plugin pipeline-model-extensions
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-stage-step for plugin pipeline-model-extensions
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-multibranch for plugin pipeline-model-definition
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of branch-api for plugin workflow-multibranch
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-stage-tags-metadata for plugin pipeline-model-definition
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of git-client for plugin pipeline-model-definition
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-input-step for plugin pipeline-model-definition
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of jjwt-api for plugin github-branch-source
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of okhttp-api for plugin github-branch-source
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of github-api for plugin github-branch-source
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of github for plugin github-branch-source
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of git for plugin github
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-rest-api for plugin pipeline-stage-view
+2023-02-19 16:44:28.646+0000 [id=79]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-graph-analysis for plugin pipeline-rest-api
+2023-02-19 16:44:31.747+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: javax-activation-api
+2023-02-19 16:44:31.747+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of javax-mail-api on behalf of admin
+2023-02-19 16:44:31.747+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading javax-mail-api
+2023-02-19 16:44:34.826+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: javax-mail-api
+2023-02-19 16:44:34.826+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of bouncycastle-api on behalf of admin
+2023-02-19 16:44:34.826+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading bouncycastle-api
+2023-02-19 16:44:52.016+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: bouncycastle-api
+2023-02-19 16:44:52.016+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of instance-identity on behalf of admin
+2023-02-19 16:44:52.016+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading instance-identity
+2023-02-19 16:44:54.436+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: instance-identity
+2023-02-19 16:44:54.436+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of ionicons-api on behalf of admin
+2023-02-19 16:44:54.436+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ionicons-api
+2023-02-19 16:44:57.170+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: ionicons-api
+2023-02-19 16:44:57.170+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of cloudbees-folder on behalf of admin
+2023-02-19 16:44:57.170+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading cloudbees-folder
+2023-02-19 16:44:59.906+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: cloudbees-folder
+2023-02-19 16:44:59.906+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of mina-sshd-api-common on behalf of admin
+2023-02-19 16:44:59.906+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading mina-sshd-api-common
+2023-02-19 16:45:03.420+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: mina-sshd-api-common
+2023-02-19 16:45:03.420+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of mina-sshd-api-core on behalf of admin
+2023-02-19 16:45:03.426+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading mina-sshd-api-core
+2023-02-19 16:45:06.711+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: mina-sshd-api-core
+2023-02-19 16:45:06.711+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of sshd on behalf of admin
+2023-02-19 16:45:06.711+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading sshd
+2023-02-19 16:45:12.672+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: sshd
+2023-02-19 16:45:12.672+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of antisamy-markup-formatter on behalf of admin
+2023-02-19 16:45:12.672+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading antisamy-markup-formatter
+2023-02-19 16:45:16.236+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: antisamy-markup-formatter
+2023-02-19 16:45:16.236+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of structs on behalf of admin
+2023-02-19 16:45:16.236+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading structs
+2023-02-19 16:45:19.211+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: structs
+2023-02-19 16:45:19.211+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of token-macro on behalf of admin
+2023-02-19 16:45:19.211+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading token-macro
+2023-02-19 16:45:22.566+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: token-macro
+2023-02-19 16:45:22.566+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of build-timeout on behalf of admin
+2023-02-19 16:45:22.566+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading build-timeout
+2023-02-19 16:45:25.291+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: build-timeout
+2023-02-19 16:45:25.291+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of credentials on behalf of admin
+2023-02-19 16:45:25.291+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading credentials
+2023-02-19 16:45:31.536+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: credentials
+2023-02-19 16:45:31.536+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of trilead-api on behalf of admin
+2023-02-19 16:45:31.536+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading trilead-api
+2023-02-19 16:45:36.742+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: trilead-api
+2023-02-19 16:45:36.742+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of ssh-credentials on behalf of admin
+2023-02-19 16:45:36.746+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ssh-credentials
+2023-02-19 16:45:39.505+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: ssh-credentials
+2023-02-19 16:45:39.505+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-step-api on behalf of admin
+2023-02-19 16:45:39.505+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-step-api
+2023-02-19 16:45:42.113+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-step-api
+2023-02-19 16:45:42.113+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of plain-credentials on behalf of admin
+2023-02-19 16:45:42.116+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading plain-credentials
+2023-02-19 16:45:44.786+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: plain-credentials
+2023-02-19 16:45:44.786+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of credentials-binding on behalf of admin
+2023-02-19 16:45:44.786+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading credentials-binding
+2023-02-19 16:45:47.412+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: credentials-binding
+2023-02-19 16:45:47.412+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of scm-api on behalf of admin
+2023-02-19 16:45:47.412+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading scm-api
+2023-02-19 16:45:50.493+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: scm-api
+2023-02-19 16:45:50.496+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-api on behalf of admin
+2023-02-19 16:45:50.496+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-api
+2023-02-19 16:45:54.866+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-api
+2023-02-19 16:45:54.866+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of commons-lang3-api on behalf of admin
+2023-02-19 16:45:54.876+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading commons-lang3-api
+2023-02-19 16:45:59.043+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: commons-lang3-api
+2023-02-19 16:45:59.043+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of timestamper on behalf of admin
+2023-02-19 16:45:59.043+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading timestamper
+2023-02-19 16:46:01.767+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: timestamper
+2023-02-19 16:46:01.767+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of caffeine-api on behalf of admin
+2023-02-19 16:46:01.771+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading caffeine-api
+2023-02-19 16:46:06.188+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: caffeine-api
+2023-02-19 16:46:06.188+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of script-security on behalf of admin
+2023-02-19 16:46:06.188+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading script-security
+2023-02-19 16:46:09.949+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: script-security
+2023-02-19 16:46:09.949+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of jaxb on behalf of admin
+2023-02-19 16:46:09.949+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jaxb
+2023-02-19 16:46:15.298+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: jaxb
+2023-02-19 16:46:15.298+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of snakeyaml-api on behalf of admin
+2023-02-19 16:46:15.298+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading snakeyaml-api
+2023-02-19 16:46:20.206+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: snakeyaml-api
+2023-02-19 16:46:20.207+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of jackson2-api on behalf of admin
+2023-02-19 16:46:20.207+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jackson2-api
+2023-02-19 16:46:28.416+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: jackson2-api
+2023-02-19 16:46:28.416+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of commons-text-api on behalf of admin
+2023-02-19 16:46:28.416+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading commons-text-api
+2023-02-19 16:46:31.290+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: commons-text-api
+2023-02-19 16:46:31.290+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of plugin-util-api on behalf of admin
+2023-02-19 16:46:31.290+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading plugin-util-api
+2023-02-19 16:46:34.813+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: plugin-util-api
+2023-02-19 16:46:34.813+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of font-awesome-api on behalf of admin
+2023-02-19 16:46:34.813+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading font-awesome-api
+2023-02-19 16:46:43.666+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: font-awesome-api
+2023-02-19 16:46:43.666+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of popper2-api on behalf of admin
+2023-02-19 16:46:43.666+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading popper2-api
+2023-02-19 16:46:47.036+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: popper2-api
+2023-02-19 16:46:47.036+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of bootstrap5-api on behalf of admin
+2023-02-19 16:46:47.036+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading bootstrap5-api
+2023-02-19 16:46:51.716+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: bootstrap5-api
+2023-02-19 16:46:51.716+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of jquery3-api on behalf of admin
+2023-02-19 16:46:51.716+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jquery3-api
+2023-02-19 16:46:56.356+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: jquery3-api
+2023-02-19 16:46:56.356+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of echarts-api on behalf of admin
+2023-02-19 16:46:56.356+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading echarts-api
+2023-02-19 16:47:35.344+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: echarts-api
+2023-02-19 16:47:35.344+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of display-url-api on behalf of admin
+2023-02-19 16:47:35.344+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading display-url-api
+2023-02-19 16:47:37.856+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: display-url-api
+2023-02-19 16:47:37.856+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-support on behalf of admin
+2023-02-19 16:47:37.856+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-support
+2023-02-19 16:47:41.719+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-support
+2023-02-19 16:47:41.719+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of checks-api on behalf of admin
+2023-02-19 16:47:41.719+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading checks-api
+2023-02-19 16:47:44.263+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: checks-api
+2023-02-19 16:47:44.263+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of junit on behalf of admin
+2023-02-19 16:47:44.263+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading junit
+2023-02-19 16:47:48.291+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: junit
+2023-02-19 16:47:48.291+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of matrix-project on behalf of admin
+2023-02-19 16:47:48.291+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading matrix-project
+2023-02-19 16:47:51.166+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: matrix-project
+2023-02-19 16:47:51.166+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of resource-disposer on behalf of admin
+2023-02-19 16:47:51.166+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading resource-disposer
+2023-02-19 16:47:53.736+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: resource-disposer
+2023-02-19 16:47:53.736+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of ws-cleanup on behalf of admin
+2023-02-19 16:47:53.736+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ws-cleanup
+2023-02-19 16:47:56.370+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: ws-cleanup
+2023-02-19 16:47:56.370+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of ant on behalf of admin
+2023-02-19 16:47:56.370+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ant
+2023-02-19 16:47:59.039+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: ant
+2023-02-19 16:47:59.039+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-scm-step on behalf of admin
+2023-02-19 16:47:59.039+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-scm-step
+2023-02-19 16:48:01.619+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-scm-step
+2023-02-19 16:48:01.619+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-cps on behalf of admin
+2023-02-19 16:48:01.619+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-cps
+2023-02-19 16:48:06.253+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-cps
+2023-02-19 16:48:06.254+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of durable-task on behalf of admin
+2023-02-19 16:48:06.254+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading durable-task
+2023-02-19 16:48:28.346+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: durable-task
+2023-02-19 16:48:28.346+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-durable-task-step on behalf of admin
+2023-02-19 16:48:28.346+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-durable-task-step
+2023-02-19 16:48:30.911+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-durable-task-step
+2023-02-19 16:48:30.911+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-job on behalf of admin
+2023-02-19 16:48:30.914+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-job
+2023-02-19 16:48:33.531+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-job
+2023-02-19 16:48:33.531+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of jakarta-activation-api on behalf of admin
+2023-02-19 16:48:33.531+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jakarta-activation-api
+2023-02-19 16:48:36.025+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: jakarta-activation-api
+2023-02-19 16:48:36.025+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of jakarta-mail-api on behalf of admin
+2023-02-19 16:48:36.025+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jakarta-mail-api
+2023-02-19 16:48:39.537+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: jakarta-mail-api
+2023-02-19 16:48:39.537+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of apache-httpcomponents-client-4-api on behalf of admin
+2023-02-19 16:48:39.537+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading apache-httpcomponents-client-4-api
+2023-02-19 16:48:43.994+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: apache-httpcomponents-client-4-api
+2023-02-19 16:48:43.994+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of mailer on behalf of admin
+2023-02-19 16:48:43.994+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading mailer
+2023-02-19 16:48:49.816+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: mailer
+2023-02-19 16:48:49.816+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-basic-steps on behalf of admin
+2023-02-19 16:48:49.816+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-basic-steps
+2023-02-19 16:48:53.186+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-basic-steps
+2023-02-19 16:48:53.186+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of gradle on behalf of admin
+2023-02-19 16:48:53.186+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading gradle
+2023-02-19 16:49:42.906+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: gradle
+2023-02-19 16:49:42.911+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-milestone-step on behalf of admin
+2023-02-19 16:49:42.911+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-milestone-step
+2023-02-19 16:49:45.805+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-milestone-step
+2023-02-19 16:49:45.805+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-build-step on behalf of admin
+2023-02-19 16:49:45.805+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-build-step
+2023-02-19 16:49:48.316+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-build-step
+2023-02-19 16:49:48.316+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of variant on behalf of admin
+2023-02-19 16:49:48.316+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading variant
+2023-02-19 16:49:50.785+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: variant
+2023-02-19 16:49:50.785+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-groovy-lib on behalf of admin
+2023-02-19 16:49:50.785+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-groovy-lib
+2023-02-19 16:50:00.253+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-groovy-lib
+2023-02-19 16:50:00.253+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-model-api on behalf of admin
+2023-02-19 16:50:00.253+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-model-api
+2023-02-19 16:50:08.985+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-model-api
+2023-02-19 16:50:08.985+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-stage-step on behalf of admin
+2023-02-19 16:50:08.985+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-stage-step
+2023-02-19 16:50:11.495+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-stage-step
+2023-02-19 16:50:11.495+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-model-extensions on behalf of admin
+2023-02-19 16:50:11.495+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-model-extensions
+2023-02-19 16:50:14.113+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-model-extensions
+2023-02-19 16:50:14.113+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of branch-api on behalf of admin
+2023-02-19 16:50:14.113+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading branch-api
+2023-02-19 16:50:17.256+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: branch-api
+2023-02-19 16:50:17.256+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-multibranch on behalf of admin
+2023-02-19 16:50:17.256+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-multibranch
+2023-02-19 16:50:22.226+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-multibranch
+2023-02-19 16:50:22.236+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-stage-tags-metadata on behalf of admin
+2023-02-19 16:50:22.236+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-stage-tags-metadata
+2023-02-19 16:50:24.876+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-stage-tags-metadata
+2023-02-19 16:50:24.876+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of git-client on behalf of admin
+2023-02-19 16:50:24.876+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading git-client
+2023-02-19 16:50:35.216+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: git-client
+2023-02-19 16:50:35.216+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-input-step on behalf of admin
+2023-02-19 16:50:35.216+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-input-step
+2023-02-19 16:50:40.013+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-input-step
+2023-02-19 16:50:40.013+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-model-definition on behalf of admin
+2023-02-19 16:50:40.013+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-model-definition
+2023-02-19 16:50:43.901+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-model-definition
+2023-02-19 16:50:43.901+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-aggregator on behalf of admin
+2023-02-19 16:50:43.901+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-aggregator
+2023-02-19 16:50:50.295+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-aggregator
+2023-02-19 16:50:50.295+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of jjwt-api on behalf of admin
+2023-02-19 16:50:50.295+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jjwt-api
+2023-02-19 16:50:53.675+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: jjwt-api
+2023-02-19 16:50:53.675+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of okhttp-api on behalf of admin
+2023-02-19 16:50:53.675+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading okhttp-api
+2023-02-19 16:51:03.072+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: okhttp-api
+2023-02-19 16:51:03.072+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of github-api on behalf of admin
+2023-02-19 16:51:03.072+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading github-api
+2023-02-19 16:51:09.408+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: github-api
+2023-02-19 16:51:09.408+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of git on behalf of admin
+2023-02-19 16:51:09.408+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading git
+2023-02-19 16:51:17.249+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: git
+2023-02-19 16:51:17.249+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of github on behalf of admin
+2023-02-19 16:51:17.249+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading github
+2023-02-19 16:51:22.655+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: github
+2023-02-19 16:51:22.655+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of github-branch-source on behalf of admin
+2023-02-19 16:51:22.655+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading github-branch-source
+2023-02-19 16:51:27.337+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: github-branch-source
+2023-02-19 16:51:27.337+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-github-lib on behalf of admin
+2023-02-19 16:51:27.337+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-github-lib
+2023-02-19 16:51:29.820+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-github-lib
+2023-02-19 16:51:29.820+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-graph-analysis on behalf of admin
+2023-02-19 16:51:29.820+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-graph-analysis
+2023-02-19 16:51:33.864+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-graph-analysis
+2023-02-19 16:51:33.864+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-rest-api on behalf of admin
+2023-02-19 16:51:33.864+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-rest-api
+2023-02-19 16:51:37.870+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-rest-api
+2023-02-19 16:51:37.870+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-stage-view on behalf of admin
+2023-02-19 16:51:37.870+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-stage-view
+2023-02-19 16:51:43.434+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-stage-view
+2023-02-19 16:51:43.434+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of git on behalf of admin
+2023-02-19 16:51:43.434+0000 [id=92]	INFO	h.m.UpdateCenter$InstallationJob#_run: Skipping duplicate install of: Git@5.0.0
+2023-02-19 16:51:43.434+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: git
+2023-02-19 16:51:43.442+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of ssh-slaves on behalf of admin
+2023-02-19 16:51:43.442+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ssh-slaves
+2023-02-19 16:51:46.174+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: ssh-slaves
+2023-02-19 16:51:46.174+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of matrix-auth on behalf of admin
+2023-02-19 16:51:46.174+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading matrix-auth
+2023-02-19 16:51:49.082+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: matrix-auth
+2023-02-19 16:51:49.082+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pam-auth on behalf of admin
+2023-02-19 16:51:49.082+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pam-auth
+2023-02-19 16:51:51.655+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pam-auth
+2023-02-19 16:51:51.655+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of ldap on behalf of admin
+2023-02-19 16:51:51.655+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ldap
+2023-02-19 16:52:04.679+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: ldap
+2023-02-19 16:52:04.679+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of email-ext on behalf of admin
+2023-02-19 16:52:04.679+0000 [id=92]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading email-ext
+2023-02-19 16:52:12.585+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: email-ext
+2023-02-19 16:52:12.585+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of mailer on behalf of admin
+2023-02-19 16:52:12.585+0000 [id=92]	INFO	h.m.UpdateCenter$InstallationJob#_run: Skipping duplicate install of: Mailer@448.v5b_97805e3767
+2023-02-19 16:52:12.585+0000 [id=92]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: mailer
+2023-02-19 16:52:12.585+0000 [id=92]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completing installing of plugin batch…
+2023-02-19 16:52:16.061+0000 [id=92]	INFO	h.p.b.g.GlobalTimeOutConfiguration#load: global timeout not set
+2023-02-19 16:52:17.238+0000 [id=92]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+2023-02-19 16:52:18.769+0000 [id=92]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.plugins.gradle.GradleInstaller
+2023-02-19 16:52:19.065+0000 [id=316]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2023-02-19 16:52:19.073+0000 [id=327]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2023-02-19 16:52:19.081+0000 [id=330]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2023-02-19 16:52:19.121+0000 [id=323]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2023-02-19 16:52:19.121+0000 [id=316]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2023-02-19 16:52:19.129+0000 [id=320]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2023-02-19 16:52:19.129+0000 [id=320]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2023-02-19 16:52:19.169+0000 [id=330]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2023-02-19 16:52:19.177+0000 [id=320]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2023-02-19 16:52:19.655+0000 [id=317]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2023-02-19 16:52:19.671+0000 [id=92]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completed installation of 83 plugins in 7 min 51 sec
+2023-02-20 01:41:50.813+0000 [id=50]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-20 01:41:51.394+0000 [id=55]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-20 01:41:51.394+0000 [id=55]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-20 01:41:51.394+0000 [id=55]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-20 01:41:51.394+0000 [id=55]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-20 01:41:51.394+0000 [id=55]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
+2023-02-20 01:41:51.394+0000 [id=55]	INFO	hudson.model.AsyncPeriodicWork#doRun: Periodic background build discarder thread is still running. Execution aborted.
